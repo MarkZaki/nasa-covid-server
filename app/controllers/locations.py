@@ -1,7 +1,6 @@
-from analysis.rate_of_change import rate_of_change
-from constants import COVID_URL
-from lib.date import get_todays_date
-from lib.http import HttpGetRequest
+from app.constants import COVID_URL
+from app.lib.date import get_todays_date
+from app.lib.http import HttpGetRequest
 
 locations = {}
 

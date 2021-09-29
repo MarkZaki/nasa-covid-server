@@ -51,8 +51,3 @@ def main():
             roc = rate_of_change(country["location"]["timelines"]["deaths"]["timeline"])
             return jsonify({"deaths_roc": roc})
         return {"Error": "Country not found!"}
-
-
-if __name__ == '__main__':
-    main()
-    app.run(debug=True)
