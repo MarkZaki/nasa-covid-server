@@ -1,6 +1,6 @@
-from app.constants import COVID_URL
-from app.lib.date import get_todays_date
-from app.lib.http import HttpGetRequest
+from main.constants import COVID_URL
+from main.lib.date import get_todays_date
+from main.lib.http import HttpGetRequest
 
 locations = {}
 
