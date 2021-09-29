@@ -1,3 +1,4 @@
+from analysis.rate_of_change import rate_of_change
 from constants import COVID_URL
 from lib.date import get_todays_date
 from lib.http import HttpGetRequest
@@ -25,4 +26,5 @@ def fetch_locations():
 
 
 def fetch_country(country_id):
-    return http.get("/" + country_id)
+    data = http.get("/" + country_id)
+    return data
